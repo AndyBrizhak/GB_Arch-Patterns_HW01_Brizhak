@@ -13,13 +13,14 @@ namespace GB_Arch_Patterns_HW01_Brizhak
 
         public Customer()
         {
-            Id = CalculateId();
+            //Id = CalculateId();
+            Id = IdHelper.CalculateId();
         }
 
-        private long CalculateId()
-        {
-            long id = DateTime.Now.Ticks;
-            return id;
-        }
+        //private long CalculateId()
+        //{
+        //    long id = DateTime.Now.Ticks;
+        //    return id;
+        //}
     }
 }
