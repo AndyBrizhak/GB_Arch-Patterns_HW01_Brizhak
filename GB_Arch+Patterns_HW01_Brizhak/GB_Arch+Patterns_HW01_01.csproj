@@ -46,6 +46,7 @@
     <Compile Include="Customer.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="IdHelper.cs" />
+    <Compile Include="IIdGenerator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Store.cs" />
