@@ -13,7 +13,7 @@ namespace GB_Arch_Patterns_HW01_Brizhak
         public Store()
         {
             //Id = CalculateId();
-            Id = IdHelper.CalculateId();
+            //Id = IdHelper.CalculateId();
         }
 
 
