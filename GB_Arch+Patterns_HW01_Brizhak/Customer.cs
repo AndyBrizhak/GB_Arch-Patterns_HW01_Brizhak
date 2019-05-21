@@ -9,7 +9,7 @@ namespace GB_Arch_Patterns_HW01_Brizhak
     //public class Customer
     public class Customer : EntityBase
     {
-        public long Id { get; set; }
+        //public long Id { get; set; }
         public string Description { get; set; }
 
         public Customer()

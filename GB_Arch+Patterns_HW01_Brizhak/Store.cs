@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW01_Brizhak
 {
-    public class Store
+    public class Store : EntityBase
     {
-        public long Id { get; set; }
+        //public long Id { get; set; }
 
         public Store()
         {
