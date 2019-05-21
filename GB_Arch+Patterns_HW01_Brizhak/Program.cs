@@ -14,6 +14,9 @@ namespace GB_Arch_Patterns_HW01_Brizhak
     {
         static void Main(string[] args)
         {
+            Store store = new Store(new DefaultIdGenerator());
+            Customer customer = new Customer(new DefaultIdGenerator());
+
         }
     }
 }

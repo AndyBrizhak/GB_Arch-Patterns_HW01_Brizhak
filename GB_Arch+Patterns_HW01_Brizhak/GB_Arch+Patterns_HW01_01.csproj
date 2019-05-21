@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Customer.cs" />
+    <Compile Include="DefaultIdGenerator.cs" />
     <Compile Include="EntityBase.cs" />
     <Compile Include="IdHelper.cs" />
     <Compile Include="IIdGenerator.cs" />
