@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW01_Brizhak
 {
-   public class DefaultIdGenerator : IIdGenerator
+    public class DefaultIdGenerator : IIdGenerator
     {
         public long CalculateId()
         {

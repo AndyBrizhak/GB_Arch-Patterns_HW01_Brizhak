@@ -1,26 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-   
+﻿
 namespace GB_Arch_Patterns_HW01_Brizhak
 {
     //public class Customer
-    public class Customer /*: EntityBase*/
+    //public class Customer /*: EntityBase*/
+    public class Customer : EntityBase
     {
         //public long Id { get; set; }
-        private readonly IIdGenerator _idGenerator;
-        public long Id { get; private set; }
+        //private readonly IIdGenerator _idGenerator;
+        //public long Id { get; private set; }
         public string Description { get; set; }
 
         //public Customer()
-        public Customer(IIdGenerator idGenerator)
+        //public Customer(IIdGenerator idGenerator)
+        public Customer()
         {
             //Id = CalculateId();
             //Id = IdHelper.CalculateId();
-            _idGenerator = idGenerator;
-            Id = _idGenerator.CalculateId();
+            //_idGenerator = idGenerator;
+            //Id = _idGenerator.CalculateId();
         }
 
 

@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace GB_Arch_Patterns_HW01_Brizhak
 {
-    public class Store /*: EntityBase*/
+    //public class Store /*: EntityBase*/
+    public class Store : EntityBase
     {
-        private readonly IIdGenerator _idGenerator;
+        //private readonly IIdGenerator _idGenerator;
         //public long Id { get; set; }
-        public long Id { get; private set; }
+        //public long Id { get; private set; }
 
         //public Store()
-        public Store(IIdGenerator idGenerator)
+        //public Store(IIdGenerator idGenerator)
+        public Store()
         {
             //Id = CalculateId();
             //Id = IdHelper.CalculateId();
-            _idGenerator = idGenerator;
-            Id = _idGenerator.CalculateId();
+            //_idGenerator = idGenerator;
+            //Id = _idGenerator.CalculateId();
         }
 
 
