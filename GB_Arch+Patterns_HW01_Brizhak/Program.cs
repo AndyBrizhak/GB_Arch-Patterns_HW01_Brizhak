@@ -17,7 +17,7 @@ namespace GB_Arch_Patterns_HW01_Brizhak
             //Store store = new Store(new DefaultIdGenerator());
             Store store = new Store();
 
-            Customer customer = new Customer(new DefaultIdGenerator());
+            //Customer customer = new Customer(new DefaultIdGenerator());
             //Customer customer = new Customer();
 
             var stId = store.Id;
