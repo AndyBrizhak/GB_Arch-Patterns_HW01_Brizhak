@@ -15,7 +15,7 @@ namespace GB_Arch_Patterns_HW01_Brizhak
 
         //public Store()
         //public Store(IIdGenerator idGenerator)
-        public Store()
+        public Store(IIdGenerator idGenerator) : base(idGenerator)
         {
             //Id = CalculateId();
             //Id = IdHelper.CalculateId();
