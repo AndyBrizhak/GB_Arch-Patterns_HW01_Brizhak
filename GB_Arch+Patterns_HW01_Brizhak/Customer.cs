@@ -12,7 +12,7 @@ namespace GB_Arch_Patterns_HW01_Brizhak
 
         //public Customer()
         //public Customer(IIdGenerator idGenerator)
-        public Customer()
+        public Customer(IIdGenerator idGenerator) : base (idGenerator)
         {
             //Id = CalculateId();
             //Id = IdHelper.CalculateId();
