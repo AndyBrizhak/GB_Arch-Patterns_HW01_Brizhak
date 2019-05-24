@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 //ДЗ по курсу Архитектуры и шаблоны проектирования на C# Брижак Андрей
 //2. Реализовать программу из раздела «Повторяющиеся фрагменты кода» с помощью делегата Func.
 
@@ -13,26 +9,22 @@ namespace GB_Arch_Patterns_HW01_02
         public static readonly string Address = Constants.Address;
         public static readonly string Format = Constants.Format;
 
-        private static void DummyFunc()
+        private static string DummyFunc()
         {
-            WriteToConsole("Петя", "школьный друг", 30);
+           return string.Format(Format, $"Петя", "школьный друг", 30);
         }
 
-        private static void DummyFuncAgain()
+        private static string DummyFuncAgain()
         {
-            WriteToConsole("Вася", "сосед", 54);
+            return string.Format(Format, "Вася", "сосед", 54);
         }
 
-        private static void DummyFuncMore()
+        private static string DummyFuncMore()
         {
-            WriteToConsole("Николай", "сын", 4);
+            return string.Format(Format, "сын", 4);
         }
 
-        private static void WriteToConsole(string name, string description,
-            int age)
-        {
-            Console.WriteLine(Format, name, description, Address, age);
-        }
+        
 
 
 
