@@ -21,7 +21,7 @@ namespace GB_Arch_Patterns_HW01_02
 
         private static string DummyFuncMore()
         {
-            return string.Format(Format, "сын", 4);
+            return string.Format(Format, "Николай", "сын", 4);
         }
 
         
