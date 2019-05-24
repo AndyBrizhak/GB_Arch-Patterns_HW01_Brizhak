@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+
 //ДЗ по курсу Архитектуры и шаблоны проектирования на C# Брижак Андрей
 //2. Реализовать программу из раздела «Повторяющиеся фрагменты кода» с помощью делегата Func.
 
@@ -33,23 +36,29 @@ namespace GB_Arch_Patterns_HW01_02
             Console.WriteLine("Finish", NameMeth);
         }
 
-
-
+        private static IEnumerable<Func<string>> GetFuncSteps()
+        {
+            return new List<Func<string>>()
+            {
+                DummyFunc, DummyFuncAgain, DummyFuncMore
+            };
+        }
 
         static void Main(string[] args)
         {
-            //Console.WriteLine("Начало работы метода DummyFunc");
-            //DummyFunc();
-            //Console.WriteLine("Окончание работы метода DummyFunc");
-            //Console.WriteLine("Начало работы метода DummyFuncAgain");
-            //DummyFuncAgain();
-            //Console.WriteLine("Окончание работы метода DummyFuncAgain");
-            //Console.WriteLine("Начало работы метода DummyFuncMore");
-            //DummyFuncMore();
-            //Console.WriteLine("Окончание работы метода DummyFuncMore");
-            MakeF(func);
+
+
+            IEnumerable<Func<string>> actions = GetFuncSteps();
+            foreach (var action in actions)
+            {
+                MakeF(action);
+            }
 
             Console.ReadLine();
         }
+
+
+
+
     }
 }
