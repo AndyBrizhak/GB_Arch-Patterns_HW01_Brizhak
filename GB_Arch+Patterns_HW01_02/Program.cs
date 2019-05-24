@@ -9,22 +9,22 @@ namespace GB_Arch_Patterns_HW01_02
 {
     class Program
     {
-        public static readonly string Address = Constants.Address;
-        public static readonly string Format = Constants.Format;
+        public static readonly string _Address = Constants.address;
+        public static readonly string _Format = Constants.format;
 
         private static string DummyFunc()
         {
-           return string.Format(Format, $"Петя", "школьный друг", 30);
+           return string.Format(_Format, "Петя", "школьный друг", _Address, 30);
         }
 
         private static string DummyFuncAgain()
         {
-            return string.Format(Format, "Вася", "сосед", 54);
+            return string.Format(_Format, "Вася", "сосед", _Address, 54);
         }
 
         private static string DummyFuncMore()
         {
-            return string.Format(Format, "Николай", "сын", 4);
+            return string.Format(_Format, "Николай", "сын", _Address, 4);
         }
 
 

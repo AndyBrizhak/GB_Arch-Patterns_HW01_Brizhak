@@ -11,8 +11,8 @@ namespace GB_Arch_Patterns_HW01_02
         /// <summary>
         /// Константа с адресом
         /// </summary>
-        public static readonly string Address = "Москва, Россия";
+        public static readonly string address = "Москва, Россия";
 
-        public static readonly string Format = "{0} - {1}, адрес {2}, возраст {3}";
+        public static readonly string format = "{0} - {1}, адрес {2}, возраст {3}";
     }
 }
