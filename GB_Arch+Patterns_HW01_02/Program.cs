@@ -12,6 +12,10 @@ namespace GB_Arch_Patterns_HW01_02
         public static readonly string _Address = Constants.address;
         public static readonly string _Format = Constants.format;
 
+        /// <summary>
+        /// Функция возвращает отформатированную строку
+        /// </summary>
+        /// <returns></returns>
         private static string DummyFunc()
         {
            return string.Format(_Format, "Петя", "школьный друг", _Address, 30);
@@ -28,6 +32,10 @@ namespace GB_Arch_Patterns_HW01_02
         }
 
 
+        /// <summary>
+        /// Функция выводит метод
+        /// </summary>
+        /// <param name="func">делегат</param>
         private static void MakeF(Func<string> func)
         {
             string NameMeth = func.Method.Name;
@@ -36,6 +44,10 @@ namespace GB_Arch_Patterns_HW01_02
             Console.WriteLine("Finish", NameMeth);
         }
 
+        /// <summary>
+        /// Возвращает список обобщенных делегатов
+        /// </summary>
+        /// <returns></returns>
         private static IEnumerable<Func<string>> GetFuncSteps()
         {
             return new List<Func<string>>()
