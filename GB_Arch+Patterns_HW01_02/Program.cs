@@ -24,21 +24,31 @@ namespace GB_Arch_Patterns_HW01_02
             return string.Format(Format, "Николай", "сын", 4);
         }
 
-        
+
+        private static void MakeF(Func<string> func)
+        {
+            string NameMeth = func.Method.Name;
+            Console.WriteLine("Start", NameMeth);
+            Console.WriteLine(func());
+            Console.WriteLine("Finish", NameMeth);
+        }
+
 
 
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Начало работы метода DummyFunc");
-            DummyFunc();
-            Console.WriteLine("Окончание работы метода DummyFunc");
-            Console.WriteLine("Начало работы метода DummyFuncAgain");
-            DummyFuncAgain();
-            Console.WriteLine("Окончание работы метода DummyFuncAgain");
-            Console.WriteLine("Начало работы метода DummyFuncMore");
-            DummyFuncMore();
-            Console.WriteLine("Окончание работы метода DummyFuncMore");
+            //Console.WriteLine("Начало работы метода DummyFunc");
+            //DummyFunc();
+            //Console.WriteLine("Окончание работы метода DummyFunc");
+            //Console.WriteLine("Начало работы метода DummyFuncAgain");
+            //DummyFuncAgain();
+            //Console.WriteLine("Окончание работы метода DummyFuncAgain");
+            //Console.WriteLine("Начало работы метода DummyFuncMore");
+            //DummyFuncMore();
+            //Console.WriteLine("Окончание работы метода DummyFuncMore");
+            MakeF(func);
+
             Console.ReadLine();
         }
     }
